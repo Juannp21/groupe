@@ -3,9 +3,12 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-image: url(imagen/panel.avif);
+    background-image: url(imagen/montaña.jpg);
+    background-attachment: fixed;
     background-color: rgb(0, 26, 41);
-    font-size: 18px; /* Ajusta el tamaño de fuente según tus preferencias */
+    background-size: cover;
+    background-position: center;
+    font-size: 18px;
 }
 
 /* Encabezado y menú */
@@ -42,6 +45,8 @@ header {
     text-align: justify;
     margin: 0;
     border-radius: 10px;
+    background-color: rgba(254,191,184, 0.4); /* Fondo blanco semi-transparente */
+    
 }
 
 .text2 {
