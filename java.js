@@ -45,3 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     mostrarContenido(0);
 });
+document.addEventListener("DOMContentLoaded", function() {
+    // Oculta el indicador de carga
+    var loaderContainer = document.getElementById('loader-container');
+    loaderContainer.style.display = 'none';
+});
