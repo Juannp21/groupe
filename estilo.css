@@ -1,0 +1,217 @@
+/* Estilos generales */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagen/panel.avif);
+    background-color: rgb(0, 26, 41);
+    font-size: 18px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+/* Encabezado y menú */
+header { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    padding: 10px; 
+}
+
+.menu h1 {
+    color: rgba(43, 38, 38, 1);
+    font-size: 2em;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Sección principal */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.text {
+    padding-block: 11px;
+    text-align: justify;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.titulo-grande {
+    background-color: rgb(0, 26, 41);
+    padding: 7px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    
+}
+
+.titulo-grande h2 {
+    color: rgba(217, 217, 217, 1);
+    font-size: 1.8em; /* Ajusta el tamaño de fuente según tus preferencias */
+    margin: 0;
+}
+
+/* Estilos para los párrafos dentro de la sección principal */
+.text p {
+    font-size: 1.5em; /* Tamaño de fuente más grande, ajusta según tus preferencias */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
+/* Estilos para la lista dentro de la sección principal */
+.estudios-lista {
+    list-style-type: circle;
+    list-style-image: 20px; /* Tamaño de la viñeta */
+    padding: 0;
+}
+
+.estudios-lista li {
+    font-size: xx-large; /* Tamaño de fuente más grande para los elementos de la lista */
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.image {
+    margin-right: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos para los párrafos */
+p {
+    color: rgba(43, 38, 38, 1);
+    font-size: x-large;
+    font-family: monospace;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* Estilos para los enlaces */
+.parrafos a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.parrafos a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+.contenedorparrafo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px;
+}
+
+.contenedorparrafo p {
+    margin: 4px;
+}
+
+.boton {
+    margin: 4px;
+}
+.boton11 {
+    width: 200px;
+    height: auto;
+    color: rgba(217, 217, 217, 1);
+    padding: 8px 1px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgba(217, 217, 217, 1);
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    background-color: rgba(43, 38, 38, 1);
+    font-family: monospace;
+}
+
+/* Cambios al pasar el mouse sobre los botones */
+.boton11:hover {
+    background-color: rgba(82, 63, 63, 1);
+}
+.boton a {
+    width: 250px;
+    height: 30px;
+    color: rgba(217, 217, 217, 1);
+    padding: 8px 1px; 
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgba(217, 217, 217, 1);
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block; 
+    background-color: rgba(58,99,128,255);
+}
+
+/* Responsividad */
+.boton a:hover {
+    background-color: rgba(79,125,156,255);
+}
+
+/* viñeta y estilo para los estudios*/
+
+body.tema-oscuro {
+    background-color: #333;
+    color: #111010;
+}
+
+.menu a.activo {
+    font-weight: bold;
+    color: #0f0f0f;
+}
+
+body.clic .text.clic {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body.tema-oscuro .text {
+    background-color: #232323;
+    color: #fff;
+}
+
+body.tema-oscuro .text p,
+body.tema-oscuro .text a,
+body.tema-oscuro .text li {
+    color: #fff; /* color en modo oscuro */
+}
+
+body.clic {
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilos para el botón "Cambiar Tema" */
+header .cambiar-tema {
+    width: 180px;
+    height: 30px;
+    color: rgba(217, 217, 217, 1);
+    padding: 8px 1px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgba(217, 217, 217, 1);
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    background-color: rgba(43, 38, 38, 1);
+    font-family: monospace;
+}
+
+/* Cambios al pasar el mouse sobre el botón "Cambiar Tema" */
+header .cambiar-tema:hover {
+    background-color: rgba(82, 63, 63, 1);
+}
