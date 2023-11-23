@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Donacion</title>
+    <link rel="stylesheet" href="Donacion.css">
+    <script src="donacion.js" defer></script>
 </head>
 <body>
 
     <header>
-        <div class="image">
-            <img src="imagen/logo.jpg.png" alt="TFoto">
-          </div>
+        <img src="imagen/logo.jpg.png" alt="TFoto">
         <nav class="menu">
             <div class="boton">
                 <a href="index.html"><li class="parrafos colorparrafos"> Inicio </li></a>
@@ -34,34 +33,21 @@
     
     <main>
         <div class="container">
-            <div class="text2">
-                <div class="titulo-grande">
-                    <h2>¿A que publico esta dirigido?</h2>
-                </div>
-                <ul class="estudios-lista">
-                    <p>publico adulto en nuestro pais, dirigo a la clase media alta con intenciones</p>
-                    <p>de alcanzar los sectores menos pudientes de nuestro paisde nuestro pais</p>
-                </ul>
-                <div class="botones">
-                    <a href="imagen/Captura de pantalla 2023-11-22 161702.jpg" target="_blank" class="boton11">Arbol Del Sitio</a>
-                    <a href="publico.html" class="boton11">Publico Objetivo</a>
-                    <a href="objetivo.html" class="boton11">Objetivo Del Sitio</a>
-                </div>
+            <div class="donacion-form">
+                <input type="text" id="nombre" placeholder="Nombre"><br>
+                <input type="text" id="apellido" placeholder="Apellido"><br>
+                <input type="number" id="documento" placeholder="Número de documento"><br>
+                <input type="number" id="cantidad" placeholder="Ingrese la cantidad"><br>
+                <button id="botonDonar" data-id="123" data-nombre="Juan">Donar</button>
+                <p id="mensaje"></p>
             </div>
         </div>
     </main>
-    
 
     <footer class="contenedorparrafo">
         <div class="marca-agua">UADE</div>
         <div class="marca-agua2">Derechos reservados ©</div>
     </footer>
-
-    <!-- Indicador de carga -->
-    <div id="loader-container">
-        <div id="loader"></div>
-    </div>
-
-    <script src="java.js"></script> <!-- Asegúrate de incluir tu archivo JavaScript -->
+    
 </body>
 </html>

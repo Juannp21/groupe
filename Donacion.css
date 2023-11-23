@@ -3,7 +3,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-image: url(imagen/montaña.jpg);
+    background-image: url(imagen/PanelS.jpg);
     background-attachment: fixed;
     background-color: rgb(0, 26, 41);
     background-size: cover;
@@ -36,8 +36,32 @@ header {
 /* Sección principal */
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Ajusta este valor según lo necesites */
+    height: 100vh;
+}
+
+.container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#botonDonar {
+    width: 100%;
     padding: 10px;
+    background-color: rgba(58, 99, 128, 255);
+    color: rgba(217, 217, 217, 1);
+    border: 2px solid rgba(217, 217, 217, 1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#botonDonar:hover {
+    background-color: rgba(79, 125, 156, 255);
 }
 
 .text {
@@ -45,8 +69,6 @@ header {
     text-align: justify;
     margin: 0;
     border-radius: 10px;
-    background-color: rgba(254,191,184, 0.4); /* Fondo blanco semi-transparente */
-    
 }
 
 .text2 {
@@ -72,9 +94,7 @@ header {
     text-align: center;
     margin-bottom: 15px;
     margin-top: 15px;
-    
 }
-
 
 .titulo-grande h2 {
     color: rgba(217, 217, 217, 1);
@@ -146,6 +166,7 @@ p {
 .boton {
     margin: 4px;
 }
+
 .boton11 {
     width: 200px;
     height: auto;
@@ -166,6 +187,7 @@ p {
 .boton11:hover {
     background-color: rgba(79,125,156,255);
 }
+
 .boton a {
     width: 250px;
     height: 30px;
@@ -241,8 +263,6 @@ header .cambiar-tema:hover {
 .home{
     font-size: xx-large;
     font-family :monospace;
-
-
 }
 
 .home {
@@ -253,6 +273,7 @@ header .cambiar-tema:hover {
     border-right: 2px solid #000; /* Simula el cursor de escritura */
     padding: 10px;
 }
+
 /* Estilos para la marca de agua */
 .marca-agua {
     position: fixed;
@@ -264,6 +285,7 @@ header .cambiar-tema:hover {
     pointer-events: none; /* Evitar que la marca de agua interfiera con eventos del mouse */
     background-color: rgb(0, 26, 41);
 }
+
 .marca-agua2 {
     position: fixed;
     bottom: 10px;
@@ -272,6 +294,7 @@ header .cambiar-tema:hover {
     transform: rotate(0deg); /* Rotar el texto */
     pointer-events: none; /* Evitar que la marca de agua interfiera con eventos del mouse */
 }
+
 /* Estilos para el indicador de carga */
 #loader-container {
     position: fixed;
@@ -298,4 +321,38 @@ header .cambiar-tema:hover {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* Estilos para la sección de donación */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#botonDonar {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(58, 99, 128, 255);
+    color: rgba(217, 217, 217, 1);
+    border: 2px solid rgba(217, 217, 217, 1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#botonDonar:hover {
+    background-color: rgba(79, 125, 156, 255);
 }
